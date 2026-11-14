@@ -55,8 +55,14 @@ optionally add  <meta property="og:url" content="https://begwork.xyz/">
 check it by pasting the link into a telegram chat or into https://www.opengraph.xyz
 
 
-5. put it online for free
--------------------------
+5. online now: https://realdoomsman.github.io/begwork/
+-------------------------------------------------------
+hosted on github pages, repo github.com/realdoomsman/begwork (this folder is that repo).
+to update after editing config.js or running sync_assets.py, in this folder run:
+  git add -A && git commit -m "update" && git push
+the live site refreshes about 30 seconds later.
+
+other free hosts if you ever move it:
 netlify drop (easiest, no account needed to try):
   go to https://app.netlify.com/drop and drag the whole "site" folder onto the page.
   you get a https://something.netlify.app address. make a free account to keep it
