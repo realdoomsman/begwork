@@ -2,7 +2,7 @@
 // leave CA as "" until the coin is live: the site then says "ca drops at launch"
 // empty X_URL / STICKERS_URL = that link shows "soon" and does nothing.
 window.BEG = {
-  CA: "",
+  CA: "A9QkSfaZHR4V51ETxE1NACaGNQom2FtE45bAGBP2pump",
   X_URL: "https://x.com/begworklol",
   STICKERS_URL: "https://t.me/addstickers/begwork",
 
