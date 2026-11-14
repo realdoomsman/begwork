@@ -55,9 +55,10 @@ optionally add  <meta property="og:url" content="https://begwork.xyz/">
 check it by pasting the link into a telegram chat or into https://www.opengraph.xyz
 
 
-5. online now: https://realdoomsman.github.io/begwork/
+5. online now: https://begwork.lol
 -------------------------------------------------------
 hosted on github pages, repo github.com/realdoomsman/begwork (this folder is that repo).
+domain: porkbun dns -> ALIAS begwork.lol and CNAME www both point to realdoomsman.github.io. keep the CNAME file in this folder.
 to update after editing config.js or running sync_assets.py, in this folder run:
   git add -A && git commit -m "update" && git push
 the live site refreshes about 30 seconds later.
