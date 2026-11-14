@@ -12,21 +12,18 @@ preview: double click index.html.
 
 1. before launch
 ----------------
-leave CA as "" in config.js. the site then shows "ca drops at launch" and the
-buy / dexscreener buttons are greyed out with "(soon)". same for any empty link.
+leave CA as "" in config.js. the site then shows "ca drops at launch" and the copy
+button is greyed out. there are no buy / dexscreener buttons (removed on purpose).
 
 
 2. after launch: fill config.js
 -------------------------------
-open config.js in notepad and paste between the quotes:
+open config.js in notepad and paste the mint address between the quotes:
 
   CA: "the pump.fun mint address",
-  X_URL: "https://x.com/<the begwork account>",
-  TG_URL: "https://t.me/<the group>",
-  STICKERS_URL: "https://t.me/addstickers/<the pack name>",
 
-buy (https://pump.fun/coin/<CA>) and dexscreener (https://dexscreener.com/solana/<CA>)
-links are built from CA automatically. save, then re-deploy (step 5).
+X_URL (https://x.com/begworklol) and STICKERS_URL (https://t.me/addstickers/begwork) are already set;
+the "Telegram stickers" link uses STICKERS_URL. save, then re-deploy (step 5).
 
 
 3. update the pictures

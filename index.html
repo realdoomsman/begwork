@@ -62,7 +62,7 @@ td { vertical-align: top; font-size: 12px; }
 <td><font face="Arial" size="4" color="red"><b>CA:</b></font>
 <font face="Courier New" size="3"><b><span id="ca">ca drops at launch dont buy fakes</span></b></font>
 <button id="copy">COPY</button> <font color="red"><b><span id="copymsg"></span></b></font>
-&nbsp; <b>[<a id="buy">BUY</a>] [<a id="dex">Dexscreener</a>] [<a id="x">Twitter</a>] [<a id="tg">Telegram</a>]</b>
+&nbsp; <b>[<a id="x">Twitter</a>] [<a id="tg">Telegram stickers</a>]</b>
 <span class="blink"><font color="red"><b>NEW!!</b></font></span></td>
 </tr></table>
 
@@ -161,10 +161,8 @@ $("copy").onclick = function () {
   if (!ok && navigator.clipboard) { navigator.clipboard.writeText(CA); ok = true; }
   $("copymsg").textContent = ok ? "COPIED!!" : "hold your finger on it";
 };
-link("buy", CA ? "https://pump.fun/coin/" + CA : "");
-link("dex", CA ? "https://dexscreener.com/solana/" + CA : "");
 link("x", B.X_URL);
-link("tg", B.TG_URL);
+link("tg", B.STICKERS_URL);
 link("stick", B.STICKERS_URL);
 
 // every meme = a "top beg" card, lingscars style

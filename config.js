@@ -1,12 +1,10 @@
 // begwork site config. edit the 4 strings below after launch, save, re-upload.
 // leave CA as "" until the coin is live: the site then says "ca drops at launch"
-// and the buy / dexscreener buttons stay greyed out.
-// empty X_URL / TG_URL / STICKERS_URL = that button shows "soon" and does nothing.
+// empty X_URL / STICKERS_URL = that link shows "soon" and does nothing.
 window.BEG = {
   CA: "",
-  X_URL: "",
-  TG_URL: "",
-  STICKERS_URL: "",
+  X_URL: "https://x.com/begworklol",
+  STICKERS_URL: "https://t.me/addstickers/begwork",
 
   // the two lists below are rewritten by sync_assets.py. dont hand edit between the markers.
   // memes start
