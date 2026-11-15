@@ -168,7 +168,11 @@ link("stick", B.STICKERS_URL);
 // every meme = a "top beg" card, lingscars style
 var labels = ["GREAT SCOTT!!", "SCOOBY SNACK?!", "WOW!!", "NEW!!", "PLS!!", "BEG!!", "SER!!", "HOT!!"];
 var begs = ["pls ape", "anything helps", "ser pls ape", "1 ape pls", "gm pls ape", "its begwork", "ape pls pls pls", "ty for aping"];
-(B.memes || []).forEach(function (src, i) {
+// newest memes first: higher file number = added later
+var memesNewest = (B.memes || []).slice().sort(function (a, b) {
+  return parseInt(b.split("/").pop(), 10) - parseInt(a.split("/").pop(), 10);
+});
+memesNewest.forEach(function (src, i) {
   var name = src.split("/").pop().replace(/\.\w+$/, "").replace(/^\d+_?/, "").replace(/_/g, " ");
   var d = document.createElement("div");
   d.className = "card";
